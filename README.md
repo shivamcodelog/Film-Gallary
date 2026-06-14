@@ -1,16 +1,40 @@
-# React + Vite
+# Film Gallery 🎬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive movie discovery application built with React.js that allows users to browse popular movies, search for their favorites, and maintain a personal favorites list using persistent local storage.
 
-Currently, two official plugins are available:
+## 🚀 Purpose of the Project
+I built this project to revitalize and solidify my knowledge of:
+- **React.js**: Deep diving into component architecture and state management.
+- **Hooks**: Mastering `useState` and `useEffect` for data fetching and side effects.
+- **Context API**: Implementing global state management without prop-drilling.
+- **API Integration**: Working with real-world movie data from TMDB.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 What I Learned: The Context Hook
+The core of this project was mastering the **Context Hook (`useContext`)**. Here's a breakdown of my learning:
+- **Global State Management**: I learned how to create a centralized store for "Favorites" that is accessible from any component (like the Movie Card or the Favorites Page) without passing props through multiple levels.
+- **Provider & Consumer Pattern**: Setting up a `MovieProvider` to wrap the application and creating a custom `useMovieContext` hook for a cleaner, more intuitive component API.
+- **Data Persistence**: Leveraging `useEffect` within the context to sync global state with `localStorage`, ensuring the user's data persists even after a page refresh.
 
-## React Compiler
+## ✨ Features
+- **Live Search**: Find any movie instantly.
+- **Favorites System**: Bookmark movies you love.
+- **Persistent Data**: Your favorites stay saved in your browser.
+- **Responsive Design**: Looks great on all screen sizes.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Built With
+- **React.js**
+- **Lucide React** (for icons)
+- **Tailwind CSS** (for styling)
+- **TMDB API** (for movie data)
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
+![Home Page](src/assets/home.png)
+![Favorites Page](src/assets/fav.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚦 Getting Started
+1. Clone the repository
+2. Run `npm install`
+3. Start the dev server with `npm run dev`
+
+---
+*Created with ❤️ to master the art of React hooks.*

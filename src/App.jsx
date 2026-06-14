@@ -3,7 +3,7 @@ import MovieCard from './components/MovieCard'
 import Home from './pages/Home'
 import { Routes,Route } from 'react-router-dom'
 import Favourates from './pages/Favourates'
-import Navbar from './components/Navebar'
+import Navbar from './components/Navbar'
 import {MovieProvider} from './context/MovieContext'
 
 const App = () => {
